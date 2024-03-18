@@ -8,8 +8,18 @@ class Home extends BaseController
     {
         $data = [
             'title' =>     'Admin',
+            'page'  =>      'home',
+            'main'  =>      'home',
             'isi'   =>      'index'
         ];
         echo view('wrapper', $data);
+    }
+    public function login()
+    {
+        $data = [
+            'title' =>     'Admin',
+            'isi'   =>      'login'
+        ];
+        echo view('login');
     }
 }
